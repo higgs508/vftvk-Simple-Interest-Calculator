@@ -1,7 +1,7 @@
 body {
   background-color:black; 
   font-family:arial; 
-  font-color:white;
+  color:white;
 }
 h1 {
   color:grey; 
@@ -9,7 +9,7 @@ h1 {
 }
 maindiv {
   background-color:white; 
-  font-color:black; 
+  color:black; 
   width:300px; 
   padding:20px;
   border:25px;
