@@ -1,6 +1,18 @@
 function compute()
 {
-    p = document.getElementById("principal").value;
-    
+    var principal = document.getElementById("principal");
+	var rate = document.getElementById("rate");
+	var years = document.getElementById("years");
+	var interest = (principal*years*rate/100);
+	var date = currentTime.getFullYear();
+	var future = date + years;
+}
+
+var rangeSlider = document.getElementById("rate");
+var output = document.getElementById('10.25%');
+outpute.innerHTML = rangeslider.value;
+
+rangeslider.oninput = function(){
+		output.innerHTML = this.value;
 }
         
