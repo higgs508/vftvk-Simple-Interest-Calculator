@@ -12,7 +12,8 @@ var rangeSlider = document.getElementById("rate");
 var output = document.getElementById("intRate");
 output.innerHTML = rangeSlider.value;
 
-rangeSlider.onchange = function(){
+rangeSlider.onchange = function()
+{
 	output.innerHTML = rangeSlider.value;
 }
         
