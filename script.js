@@ -9,8 +9,8 @@ function compute()
 }
 
 var rangeSlider = document.getElementById("rate");
-var output = document.getElementById('10.25%');
-output.innerHTML = rangeslider.value;
+var intRate = document.getElementById("intRate");
+output.innerHTML = rangeSlider.value;
 
 rangeslider.onchange = function(){
 		output.innerHTML = this.value;
