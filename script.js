@@ -13,6 +13,6 @@ var output = document.getElementById("intRate");
 output.innerHTML = rangeSlider.value;
 
 rangeSlider.oninput = function(){
-		output.innerHTML = this.value;
+		output.innerHTML = rangeSlider.value;
 }
         
