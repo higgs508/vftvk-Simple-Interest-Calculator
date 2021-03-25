@@ -9,7 +9,7 @@ function compute()
 }
 
 var rangeSlider = document.getElementById("rate");
-var intRate = document.getElementById("intRate");
+var output = document.getElementById("intRate");
 output.innerHTML = rangeSlider.value;
 
 rangeslider.onchange = function(){
