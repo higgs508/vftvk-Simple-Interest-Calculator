@@ -8,12 +8,12 @@ function compute()
 	var future = date + years;
 }
 
-var rangeSlider = document.getElementById("rate");
+var rangeslider = document.getElementById("rate");
 var output = document.getElementById("intRate");
-output.innerHTML = rangeSlider.value;
+output.innerHTML = rangeslider.value;
 
-rangeSlider.onchange = function()
+rangeslider.onchange = function()
 {
-	output.innerHTML = rangeSlider.value;
+	output.innerHTML = rangeslider.value;
 }
         
