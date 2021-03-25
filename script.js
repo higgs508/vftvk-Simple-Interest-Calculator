@@ -10,9 +10,9 @@ function compute()
 
 var rangeSlider = document.getElementById("rate");
 var output = document.getElementById('10.25%');
-outpute.innerHTML = rangeslider.value;
+output.innerHTML = rangeslider.value;
 
-rangeslider.oninput = function(){
+rangeslider.onchange = function(){
 		output.innerHTML = this.value;
 }
         
