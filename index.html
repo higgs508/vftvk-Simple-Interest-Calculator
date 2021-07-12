@@ -1,20 +1,37 @@
+<!-- Doctype is missing. Add the doctype. -->
+
 <!Doctype HTML>
 <html>
     <head>
+        
+        <!-- Add title -->
+        
         <title>Simple Interest Calculator</title>
            <link rel="stylesheet" href="style.css">
     </head>
                 
-        
+       <!-- Move all the content which currently is in the <body> to a <div> tag --> 
+    
                 <body>
+                    
+                    <!-- Set the class attribute of this div to 'maindiv' -->
                     
                    <div class="main">
                         <h1>Simple Interest Calculator</h1>
 
                         Amount          <input type="number"  id="principal">
                         <br/>
+                       
+                       <!-- Modify the input text box for interest rate to a slider using the <input type="range"> tag -->
+                       <!-- For the rate input, set the attributes min to 1, max to 20 and step to 0.25 and the default value to 10.25 -->
+                       <!-- To show the value selected by the range, create a <span> element right after the range.-->
+                       <!-- Inside the '` tag add the text "10.25 %".-->
+                       
                         Interest Rate   <input type="range"  min="1" max="20" step="0.25" value="10.25" id="rate" onchange="updateRate()"> <span id="rate_val"> 10.25 </span>%
                         <br/>
+                       
+                       <!-- Modify the input text box for "No of years" into a dropdown box with options 1 to 10. -->
+                       
                         No. of Years    <select id="years">
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -29,8 +46,16 @@
                             </select>
                         <br/>
 
+                       <!-- Change the name of "Compute" button to "Compute Interest"-->
+                       
                     <button onclick="compute()">Compute Interest</button>
+                       
+                       <!--Below the "Compute Interest" button create an empty <span> and set its id to 'result'.-->
+                       
                         <span id="result"></span>
+                       
+                       <!--Add a copyright message using the <footer> tag.-->
+                       
                        <footer>
                             &#169; This Calculator belongs to Alex Higgins
                        </footer>
