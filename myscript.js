@@ -1,7 +1,9 @@
-var rangeslider = document.getElementById("rate");
-var output = document.getElementById("intrate");
-output.innerHTML = rangeslider.value;
-
-rangeslider.onchange = function() {
-  output.innerHTML = this.value;
+var principal = document.getElementById("principal").value;
+var rate = document.getElementById("rate").value;
+var years = document.getElementById("years").value;
+var interest = principal * years * rate /100;
+function updateRate() 
+{
+    var rateval = document.getElementById("rate").value;
+    document.getElementById("rate_val").innerText=rateval;
 }
