@@ -17,9 +17,7 @@ function compute()
     let x = document.getElementById("principal").value;
     if (x <= 0) {
     alert("Please enter a positive number.");
-    setTimeout(function(){
-                document.getElementById("principal").focus();
-    }
+    document.getElementById("principal").focus();
     return false;
     }
 
