@@ -11,30 +11,32 @@ function compute()
 {
     
     //Create a variable called 'principal' and assign to it the value of the input element "principal"
-    var principal = document.getElementById("principal").value;
+    var p = document.getElementById("principal").value;
 
     //Create a variable called rate and assign to it the value of the input element "rate"
-    var rate = document.getElementById("rate").value;
+    var r = document.getElementById("rate").value;
 
     //Create a variable called years and assign to it the value of the input element "years"
-    var years = document.getElementById("years").value;
+    var y = document.getElementById("years").value;
 
     //Create a variable called interest and assign to it the value of principal * years * rate / 100
-    var interest = principal * years * rate /100;
+    var interest = p * y * r /100;
     
    //Write the logic to convert the 'No of Years' into the actual year in the future.
     var year = new Date().getFullYear()+parseInt(years);
     
     //Get reference to the element named 'result'
-    document.getElementById("result").innerHTML="If you deposit "+principal+",\
-    <br\>at an interest rate of "+rate+"%\
+    document.getElementById("result").innerHTML="If you deposit "+p+",\
+    <br\>at an interest rate of "+r+"%\
     <br\>You will receive an amount of "+interest+",\
     <br\>in the year "+year+"\<br\>"
 }
 
-function num() {
-        var v = document.getElementById("principal").value;
-        if (v <= 0) {
+//Create a 'if' to alert if principal is <=0
+
+var v = document.getElementById("principal").value;
+    
+if (v <= 0) 
+        {
             alert("Value should be a positive number");
         }
-}
