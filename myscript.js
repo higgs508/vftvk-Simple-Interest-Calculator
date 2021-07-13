@@ -23,11 +23,20 @@ function compute()
     var interest = p * y * r /100;
     
    //Write the logic to convert the 'No of Years' into the actual year in the future.
-    var year = new Date().getFullYear()+parseInt(years);
+    var year = new Date().getFullYear()+parseInt(y);
     
     //Get reference to the element named 'result'
     document.getElementById("result").innerHTML="If you deposit "+p+",\
     <br\>at an interest rate of "+r+"%\
     <br\>You will receive an amount of "+interest+",\
     <br\>in the year "+year+"\<br\>"
+}
+
+//Create validate principal >= 0
+function validateForm() {
+  let x = document.getElementById("principal").value;
+  if (x <= 0) {
+    alert("Please enter a positive number.");
+    return false;
+  }
 }
