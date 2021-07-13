@@ -14,13 +14,7 @@ function compute()
     var p = document.getElementById("principal").value;
     
     //Create a 'if' to alert if principal is <=0
-    function num() {
-        var v=document.getElementById("principal").value;
-        if(v<=0)
-        {
-            alert('value should be a positive number')
-        }
-    }
+    if (p <= 0) text = "Please enter a positive number.";
 
     //Create a variable called rate and assign to it the value of the input element "rate"
     var r = document.getElementById("rate").value;
