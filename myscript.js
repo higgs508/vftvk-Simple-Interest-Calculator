@@ -17,6 +17,9 @@ function compute()
     let x = document.getElementById("principal").value;
     if (x <= 0) {
     alert("Please enter a positive number.");
+    setTimeout(function(){
+                document.getElementById("principal").focus();
+    }
     return false;
     }
 
@@ -39,7 +42,4 @@ function compute()
     <br\>at an interest rate of "+r+"%\
     <br\>You will receive an amount of "+interest+",\
     <br\>in the year "+year+"\<br\>"
-}
-function setFocusToTextBox(){
-    document.getElementById("principal").focus();
 }
