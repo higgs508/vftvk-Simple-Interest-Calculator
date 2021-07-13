@@ -12,6 +12,15 @@ function compute()
     
     //Create a variable called 'principal' and assign to it the value of the input element "principal"
     var p = document.getElementById("principal").value;
+    
+    //Create a 'if' to alert if principal is <=0
+    function num() {
+        var v=document.getElementById("principal").value;
+        if(v<=0)
+        {
+            alert('value should be a positive number')
+        }
+    }
 
     //Create a variable called rate and assign to it the value of the input element "rate"
     var r = document.getElementById("rate").value;
@@ -31,10 +40,3 @@ function compute()
     <br\>You will receive an amount of "+interest+",\
     <br\>in the year "+year+"\<br\>"
 }
-
-//Create a 'if' to alert if principal is <=0
-    if (p <= 0) 
-        {
-            alert("Enter a positive number");
-        }
-
