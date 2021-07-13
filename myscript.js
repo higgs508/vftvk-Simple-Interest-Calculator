@@ -12,6 +12,13 @@ function compute()
     
     //Create a variable called 'principal' and assign to it the value of the input element "principal"
     var p = document.getElementById("principal").value;
+    
+    //Validate principal >= 0
+    let x = document.getElementById("principal").value;
+    if (x <= 0) {
+    alert("Please enter a positive number.");
+    return false;
+    }
 
     //Create a variable called rate and assign to it the value of the input element "rate"
     var r = document.getElementById("rate").value;
@@ -32,11 +39,3 @@ function compute()
     <br\>in the year "+year+"\<br\>"
 }
 
-//Create validate principal >= 0
-function validateForm() {
-  let x = document.getElementById("principal").value;
-  if (x <= 0) {
-    alert("Please enter a positive number.");
-    return false;
-  }
-}
