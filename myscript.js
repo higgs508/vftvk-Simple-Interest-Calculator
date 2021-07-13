@@ -40,4 +40,6 @@ function compute()
     <br\>You will receive an amount of "+interest+",\
     <br\>in the year "+year+"\<br\>"
 }
-
+function setFocusToTextBox(){
+    document.getElementById("principal").focus();
+}
