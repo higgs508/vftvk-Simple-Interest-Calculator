@@ -26,7 +26,7 @@ function compute()
     var year = new Date().getFullYear()+parseInt(years);
     
     //Get reference to the element named 'result'
-    var result = document.getElementById("result").innerHTML="If you deposit "+principal+",\
+    document.getElementById("result").innerHTML="If you deposit "+principal+",\
     <br\>at an interest rate of "+rate+"%\
     <br\>You will receive an amount of "+interest+",\
     <br\>in the year "+year+"\<br\>"
