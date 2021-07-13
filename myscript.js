@@ -30,7 +30,9 @@ function compute()
     var interest = p * y * r /100;
     
    //Write the logic to convert the 'No of Years' into the actual year in the future.
-    var year = new Date().getFullYear()+parseInt(y);
+    var dateobj = newDate();
+    var b = dateobj.getFullYear();
+    var year = b + y;
     
     //Get reference to the element named 'result'
     document.getElementById("result").innerHTML="If you deposit "+p+",\
