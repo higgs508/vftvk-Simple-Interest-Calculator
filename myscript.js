@@ -35,6 +35,6 @@ function compute()
 //Create a 'if' to alert if principal is <=0
     if (p <= 0) 
         {
-            alert("Value should be a positive number");
+            alert("Enter a positive number");
         }
 
