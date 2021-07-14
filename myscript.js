@@ -19,7 +19,7 @@ function compute()
         if(v<=0)
         {
             alert('value should be a positive number')
-            
+            return false;
         }
     
     var year = new Date().getFullYear()+parseInt(y);
