@@ -14,13 +14,14 @@ function compute()
     var y = document.getElementById("years").value;
     var result = document.getElementById("result");
     
-    function num() {
-        var v=document.getElementById("principal").value;
+    
+        let v=document.getElementById("principal").value;
         if(v<=0)
         {
             alert('value should be a positive number')
+            
         }
-    }
+    
     
     var dateobj = new Date();
     var b = dateobj.getFullYear();
