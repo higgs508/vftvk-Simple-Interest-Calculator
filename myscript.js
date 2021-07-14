@@ -20,6 +20,9 @@ function compute()
     document.getElementById("principal").focus();
     return false;
     }
+    else {
+        return true;
+    }
 
     //Create a variable called rate and assign to it the value of the input element "rate"
     var r = document.getElementById("rate").value;
