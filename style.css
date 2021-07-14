@@ -31,4 +31,9 @@ Align the div to the center of the page.
   margin:auto;
 } 
 
+/*Highlight results*/
+
+.highlight {
+  background-color: yellow;
+}
 
