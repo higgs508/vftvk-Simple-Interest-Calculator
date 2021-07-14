@@ -9,28 +9,29 @@ function updateRate()
 
 function compute()
 {
-    
-    //Create a variable called 'principal' and assign to it the value of the input element "principal"
     var p = document.getElementById("principal").value;
-    
-    //Create a variable called rate and assign to it the value of the input element "rate"
     var r = document.getElementById("rate").value;
-
-    //Create a variable called years and assign to it the value of the input element "years"
     var y = document.getElementById("years").value;
+    var result = document.getElementById("result");
+    
+    function num() {
+        var v=document.getElementById("principal").value;
+        if(v<=0)
+        {
+            alert('value should be a positive number')
+        }
+    }
+    
+var dateobj = new Date();
+    var B = dateobj.getFullYear();
+    var year = B+y;
 
-    //Create a variable called interest and assign to it the value of principal * years * rate / 100
-    var interest = p * y * r /100;
+               
+    var interest = (p*r*y)/100;
+
+
     
-   //Write the logic to convert the 'No of Years' into the actual year in the future.
-    var dateobj = newDate();
-    var b = dateobj.getFullYear();
-    var year = b + y;
-    
-    //Get reference to the element named 'result'
-    document.getElementById("result").innerHTML="If you deposit "+p+",\
-    <br\>at an interest rate of "+r+"%\
-    <br\>You will receive an amount of "+interest+",\
-    <br\>in the year "+year+"\<br\>";
+    var amt=interest;
+    var result=document.getElementById("result");
+    result.innerHTML="If you deposit "+p+",<br> at an interest rate of "+r+"%. <br>You will receive an amount of " +amt+",<br>in the year"+year;
 }
-
