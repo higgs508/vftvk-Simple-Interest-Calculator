@@ -31,8 +31,10 @@ function compute()
     var interest = (p*r*y)/100;
 
 
-    
-    var amt=interest;
-    var result=document.getElementById("result");
-    result.innerHTML="If you deposit "+p+",<br> at an interest rate of "+r+"%. <br>You will receive an amount of " +amt+",<br>in the year"+year+;
+
+    document.getElementById("result").innerHTML="If you deposit "+p+
+        ",\<br\>at an interest rate of "+r+
+        "%\<br\>You will receive an amount of "+interest+
+        ",\<br\>in the year "+year+
+        "\<br\>"
 }
