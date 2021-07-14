@@ -20,6 +20,7 @@ function compute()
         {
             alert('value should be a positive number')
             return false;
+            document.getElementById("principal").focus();
         }
     
     var year = new Date().getFullYear()+parseInt(y);
