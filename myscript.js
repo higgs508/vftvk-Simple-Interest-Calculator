@@ -22,10 +22,8 @@ function compute()
             
         }
     
+    var year = new Date().getFullYear()+parseInt(y);
     
-    var dateobj = new Date();
-    var b = dateobj.getFullYear();
-    var year = b+y;
 
                
     var interest = (p*r*y)/100;
