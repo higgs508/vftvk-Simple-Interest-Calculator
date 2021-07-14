@@ -19,8 +19,8 @@ function compute()
         if(v<=0)
         {
             alert('value should be a positive number')
-            return false;
             document.getElementById("principal").focus();
+            return false;
         }
     
     var year = new Date().getFullYear()+parseInt(y);
