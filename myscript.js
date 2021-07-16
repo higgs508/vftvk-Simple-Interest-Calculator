@@ -29,16 +29,11 @@ function compute()
                
     var interest = (p*r*y)/100;
     
-    document.getElementById("p").style.backgroundColor = "yellow";
-    document.getElementById("r").style.backgroundColor = "yellow";
-    document.getElementById("year").style.backgroundColor = "yellow";
-    document.getElementById("interest").style.backgroundColor = "yellow";
-
-    document.getElementById("result").innerHTML="If you deposit "+p+
-        ",\<br\>at an interest rate of "+r+
-        "%\<br\>You will receive an amount of "+interest+
-        ",\<br\>in the year "+year+
-        "\<br\>"
+   document.getElementById("result").innerHTML="If you deposit <div class = 'highlight'> "+p+
+        "</div>,\<br\>at an interest rate of <div class = 'highlight'>"+r+
+        "%</div> \<br\>You will receive an amount of <div class = 'highlight'>"+interest+
+        "</div> ,\<br\>in the year <div class = 'highlight'>"+year+
+        "</div> \<br\>"
     
     
 }
