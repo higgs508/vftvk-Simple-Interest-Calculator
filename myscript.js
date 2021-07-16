@@ -29,7 +29,7 @@ function compute()
                
     var interest = (p*r*y)/100;
     
-   document.getElementById("result").innerHTML="If you deposit <div class = 'highlight'>"+p+"</div>,\<br\>at an interest rate of <div class = 'highlight'>"+r+"%</div>\<br\>You will receive an amount of <div class = 'highlight'>"+interest+"</div> ,\<br\>in the year <div class = 'highlight'>"+year+"</div> \<br\>"
+   document.getElementById("result").innerHTML="If you deposit <div class = 'highlight'>"+p+"</div>,<br\>at an interest rate of <div class = 'highlight'>"+r+"%</div><br\>You will receive an amount of <div class = 'highlight'>"+interest+"</div>,<br\>in the year <div class = 'highlight'>"+year+"</div><br\>"
     
     
 }
