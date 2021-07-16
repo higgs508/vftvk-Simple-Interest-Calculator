@@ -31,9 +31,9 @@ function compute()
 
 
 
-    document.getElementById("result").innerHTML="If you deposit "+p+
-        ",\<br\>at an interest rate of "+r+
-        "%\<br\>You will receive an amount of "+interest+
-        ",\<br\>in the year "+year+
+    document.getElementById("result").innerHTML="If you deposit "<mark>+p+</mark>
+        ",\<br\>at an interest rate of "<mark>+r+</mark>
+        "%\<br\>You will receive an amount of "<mark>+interest+</mark>
+        ",\<br\>in the year "<mark>+year+</mark>
         "\<br\>"
 }
