@@ -39,6 +39,6 @@ function compute()
     
     document.getElementById("p").style.backgroundColor = "yellow";
     document.getElementById("r").style.backgroundColor = "yellow";
-    document.getElementById("y").style.backgroundColor = "yellow";
+    document.getElementById("year").style.backgroundColor = "yellow";
     document.getElementById("interest").style.backgroundColor = "yellow";
 }
