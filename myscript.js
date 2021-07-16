@@ -28,8 +28,11 @@ function compute()
 
                
     var interest = (p*r*y)/100;
-
-
+    
+    document.getElementById("p").style.backgroundColor = "yellow";
+    document.getElementById("r").style.backgroundColor = "yellow";
+    document.getElementById("year").style.backgroundColor = "yellow";
+    document.getElementById("interest").style.backgroundColor = "yellow";
 
     document.getElementById("result").innerHTML="If you deposit "+p+
         ",\<br\>at an interest rate of "+r+
@@ -37,8 +40,5 @@ function compute()
         ",\<br\>in the year "+year+
         "\<br\>"
     
-    document.getElementById("p").style.backgroundColor = "yellow";
-    document.getElementById("r").style.backgroundColor = "yellow";
-    document.getElementById("year").style.backgroundColor = "yellow";
-    document.getElementById("interest").style.backgroundColor = "yellow";
+    
 }
