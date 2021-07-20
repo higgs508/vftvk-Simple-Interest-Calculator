@@ -33,7 +33,7 @@ Align the div to the center of the page.
 
 /*Highlight results*/
 
-h2 {
+.highlight {
   background-color: yellow;
 }
 
