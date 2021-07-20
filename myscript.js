@@ -29,7 +29,7 @@ function compute()
                
     var interest = (p*r*y)/100;
     
-   document.getElementById("result").innerHTML="If you deposit "+p+",<br\>at an interest rate of "+r+"%<br\>You will receive an amount of "+interest+",<br\>in the year "+year+"<br\>"
+   document.getElementById("result").innerHTML="<br\>If you deposit "+p+",<br\>at an interest rate of "+r+"%<br\>You will receive an amount of "+interest+",<br\>in the year "+year+"<br\>"
     
     
 }
